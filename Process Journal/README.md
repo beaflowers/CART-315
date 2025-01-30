@@ -20,7 +20,7 @@ Playtest:
 
 Everyone reactions were very positive and they thought it was really cool! But there isn't much to actually do so people only stuck to it for a few seconds before moving on. It could do more things to keep people engaged. 
 
-##Exploration Prototype 1 / 30.01.25
+## Exploration Prototype 1 / 30.01.25
 okay after stupid struggle getting basic things working because unity is massive and im struggling to keep track of 800 different asset windows or something and how everything collapses if one little preset isn't there:
 
 the face grows! the dots appear around the screen!
