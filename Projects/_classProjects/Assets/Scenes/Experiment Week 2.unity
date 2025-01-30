@@ -275,7 +275,7 @@ MonoBehaviour:
   xScal: 0
   yScal: 0
   zScal: 0
-  speed: 0.125
+  speed: 0.5
 --- !u!212 &593774480
 SpriteRenderer:
   m_ObjectHideFlags: 0
