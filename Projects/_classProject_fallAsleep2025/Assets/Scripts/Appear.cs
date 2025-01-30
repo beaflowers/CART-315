@@ -27,6 +27,7 @@ public class Appear : MonoBehaviour
             
             // Creates new sprite; trying to only spawn on edges of the screen, sort of works ok?
             Vector3 pos = randomEdge ? new Vector3(rX, rY, 0f) : new Vector3(rX2, rY, 0f);
+            
             current = Instantiate(circle, pos, transform.rotation);
             //counter increment
             counter++;
