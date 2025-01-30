@@ -36,6 +36,10 @@ okay i have no idea why the speed keeps changing for the eater and isn't working
 
 the text idea i had looks sick though, exactly like how i wanted. now if only this moved how i wanted and the face wouldn't bounce off screen 
 
+FINAL EDIT: jfc i restarted unity and it worked basically exactly how i wanted? what am i supposed to learn from this??? anyway here's a gif
+
+![](https://github.com/beaflowers/CART-315/blob/main/Gifs/eatheworld.gif)
+
 
 
 
