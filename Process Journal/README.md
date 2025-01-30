@@ -1,6 +1,6 @@
 ﻿# Process Journal
 
-## Make a Thing / 23.1.2025
+## Make a Thing / 23.01.2025
 
 I decided I wanted to make something with Processing, because I've been really curious about it for a long time but never done anything with it.
 
@@ -19,6 +19,24 @@ Pretty chill, I learned some things for sure, and didn't have to think about mat
 Playtest:
 
 Everyone reactions were very positive and they thought it was really cool! But there isn't much to actually do so people only stuck to it for a few seconds before moving on. It could do more things to keep people engaged. 
+
+##Exploration Prototype 1 / 30.01.25
+okay after stupid struggle getting basic things working because unity is massive and im struggling to keep track of 800 different asset windows or something and how everything collapses if one little preset isn't there:
+
+the face grows! the dots appear around the screen!
+
+- dots appear mostly in the center, which causes the main thing to grow without player interaction. implemented sort of wonky hack to fit things along the edges
+- dots appear forever, character grows infinitely - limited with a counter (i want the face to grow really really big, big enough to cover the screen, but not forever)
+- speed slowdown reducing speed to 0....... woops. change to subtract rather than divide. still could potentially get to 0 but hasn't happened yet?
+
+added a background: https://gamedevbeginner.com/how-to-add-a-background-image-in-unity/ (i want to try that parallax one sometime!!)
+
+okay i have no idea why the speed keeps changing for the eater. it feels like every time i add a new component it forgets whatever I've programmed in the script and starts zooming wildly around instead. at first this was because i forgot to add the box collider and had no actual physics for it, but then it changed again when i added the appear element, and now again that I've added a canvas element... why??? why would this effect that? it says the speed is 0.5 in the inspector but that's clearly not right, and it's also definitely not slowing down like i had programmed either. I sort of tweaked this within unity itself and it sort of works a little better now, though it keeps skipping past my boundaries once it gets large, and i can't return... unsure why that is?
+
+the text idea i had looks sick though, exactly like how i wanted. now if only this moved how i wanted and the face wouldn't bounce of screen 
+
+
+
 
 
 
