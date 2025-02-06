@@ -50,6 +50,42 @@ Flippers flip! (I moved this weekend, it was -30C, I am tired.)
 
 ![](https://github.com/beaflowers/CART-315/blob/main/Gifs/pawngpinball.gif)
 
+EDIT: Wow, in making this gif I accidentally crashed Unity and lost everything because I didn't save lmao. Here's my script bc that's all that lives now
+
+using UnityEngine;
+
+public class Flipper2D : MonoBehaviour
+{
+    public KeyCode flipKey; // Change to desired key
+    public float flipTorque = -1000f; // Strength of the flip
+    public float releaseTorque = 500f; // Strength of return
+
+    private HingeJoint2D hinge;
+
+    void Start()
+    {
+        hinge = GetComponent<HingeJoint2D>();
+        hinge.useMotor = true;
+    }
+
+    void Update()
+    {
+        JointMotor2D motor = hinge.motor;
+
+        if (Input.GetKey(flipKey))
+        {
+            motor.motorSpeed = flipTorque;
+        }
+        else
+        {
+            motor.motorSpeed = releaseTorque;
+        }
+
+        motor.maxMotorTorque = 3000f;
+        hinge.motor = motor;
+    }
+}
+
 
 
 
