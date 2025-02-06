@@ -52,13 +52,13 @@ Flippers flip! (I moved this weekend, it was -30C, I am tired.)
 
 EDIT: Wow, in making this gif I accidentally crashed Unity and lost everything because I didn't save lmao. Here's my script bc that's all that lives now
 
-using UnityEngine;
+{ using UnityEngine;
 
 public class Flipper2D : MonoBehaviour
 {
-    public KeyCode flipKey; // Change to desired key
-    public float flipTorque = -1000f; // Strength of the flip
-    public float releaseTorque = 500f; // Strength of return
+    public KeyCode flipKey; 
+    public float flipTorque;
+    public float releaseTorque;
 
     private HingeJoint2D hinge;
 
@@ -84,6 +84,7 @@ public class Flipper2D : MonoBehaviour
         motor.maxMotorTorque = 3000f;
         hinge.motor = motor;
     }
+}
 }
 
 
