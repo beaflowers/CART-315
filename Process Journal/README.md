@@ -48,6 +48,7 @@ Motor has torque, motor has force, needs to move in a negative direction to go u
 
 Flippers flip! (I moved this weekend, it was -30C, I am tired.)
 
+![](https://github.com/beaflowers/CART-315/blob/main/Gifs/pawngpinball.gif)
 
 
 
