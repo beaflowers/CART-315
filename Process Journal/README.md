@@ -42,7 +42,9 @@ FINAL EDIT: jfc i restarted unity and it worked basically exactly how i wanted? 
 
 ## Exploration Prototype 2 6/2/2025
 
-I made the pong paddles into pinball flippers. Looked up some youtube tutorials on how to do this - didn't actually use much of what we learned in class necessarily, but I did learn about motors and hinges! It was tricky getting the angles right and I can't say it made total sense the way things were flipping around but after trial and error it worked. 
+I made the pong paddles into pinball flippers. Looked up some youtube tutorials on how to do this - didn't actually use much of what we learned in class necessarily, but I did learn about motors and hinges! It was tricky getting the angles of flip right and I can't say it made total sense the way things were flipping around but after trial and error it worked. It was a lot of reversing negative values to positive values, trying to get everything to move correctly and then totally reversing the limit angle of the right flipper... 
+
+Motor has torque, motor has force, needs to move in a negative direction to go up, positive direction to go down.
 
 Flippers flip! (I moved this weekend, it was -30C, I am tired.)
 
