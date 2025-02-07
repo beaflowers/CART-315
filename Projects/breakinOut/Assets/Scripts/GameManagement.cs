@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement; // helps us move through scenes 
 
 public class GameManagement : MonoBehaviour
 {
@@ -19,6 +20,14 @@ public class GameManagement : MonoBehaviour
     {
         lives -= 1;
         Debug.Log(lives);
+
+        if (lives <= 0) 
+        {GameOver();}
+    }
+
+    public void GameOver()
+    {
+        SceneManager.LoadScene("GameOver");
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
