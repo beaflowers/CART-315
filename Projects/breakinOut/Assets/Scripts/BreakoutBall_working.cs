@@ -86,6 +86,14 @@ public class BreakoutBall_working : MonoBehaviour
             Reset();
         }
 
+        if (other.gameObject.tag == "Brick")
+        {
+            int  pv = other.gameObject.GetComponent<BrickScript>().pointValue; //this would return variable of pointvalue attatched to brick script
+            //brickscript exists on its own 
+            GameManagement.S.AddPoint(pv);
+            Destroy(other.gameObject);
+        }
+
     }
 
     private void SpeedCheck() {
