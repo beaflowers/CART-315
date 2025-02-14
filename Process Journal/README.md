@@ -50,6 +50,11 @@ Flippers flip! (I moved this weekend, it was -30C, I am tired.)
 
 ![](https://github.com/beaflowers/CART-315/blob/main/Gifs/pawngpinball.gif)
 
+## Exploration Prototype 3 13/2/2025
+
+Okay I have this idea but I think it's gonna require more playtesting because the idea is very technically simple but I'm not sure if it's going to "read" well. The idea of an escape room game, but in order to escape you need to be able to conceptualize of the computer (or controller, or whatever) as an object itself... So I tested out setting up scenes and changing them to remember how to do it (I didn't remember how to do it at all) and currently it switches when a key on the keyboard is pressed (F, because... why would you press F when playing a game?? Want to challenge WASD/arrow keys/spacebar/game literacy). Trying to break out of the computer itself???? 
+
+I have some text on there but it looks terrible so I wanted to tweak the text some more but then I didn't do that. It looks like you have to manually install fonts as assets which I guess makes sense but seems like a whole pain in the ass tbh. Why can't I adjust textbox size and stuff easily idk it's fine Unity is not a text editor. Gotta figure this out more
 
 
 
