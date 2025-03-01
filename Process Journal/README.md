@@ -56,6 +56,10 @@ Okay I have this idea but I think it's gonna require more playtesting because th
 
 I have some text on there but it looks terrible so I wanted to tweak the text some more but then I didn't do that. It looks like you have to manually install fonts as assets which I guess makes sense but seems like a whole pain in the ass tbh. Why can't I adjust textbox size and stuff easily idk it's fine Unity is not a text editor. Gotta figure this out more
 
+## Exploration Prototype 4 
+
+Okay had an idea to try and connect raspberry pi to Unity to try and get a custom button working. Involved a lot of navigating serials and installing .net frameworks. Gegnerated a script that allows Unity to recieve input from an outside source - it doesn't seem too complicated? And my button thing works over Thonny so the circuit is good. Still not able to get this to work but it feels really close. I am getting debug errors within Unity itself... 
+
 
 
 
