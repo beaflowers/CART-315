@@ -60,6 +60,23 @@ I have some text on there but it looks terrible so I wanted to tweak the text so
 
 Okay had an idea to try and connect raspberry pi to Unity to try and get a custom button working. Involved a lot of navigating serials and installing .net frameworks. Gegnerated a script that allows Unity to recieve input from an outside source - it doesn't seem too complicated? And my button thing works over Thonny so the circuit is good. Still not able to get this to work but it feels really close. I am getting debug errors within Unity itself... 
 
+## Extra Credit - Game Analysis
+
+I think the peak game mechanics moment I’ve experienced was from Echodog’s [Signs of the Sojourner](https://echodog-games.itch.io/signs-of-the-sojourner). 
+
+You are a trader taking on the legacy of your mother, beginning to travel around with your village’s caravan to bring back necessary goods. The main gameplay (aside from dialogue options) is a conversational card-game dynamic. A character you are speaking to plays a card, and you must match the symbol on the card from a card in your hand in order to continue the conversation, as well as ideally provide a symbol that the person you are speaking to can also continue to match. This needs to successfully happen 4 times in order for the conversation to be collaborative and meaningful - either this particular storyline progresses, or you get something to bring back to your home. 
+
+![](https://img.itch.zone/aW1hZ2UvNDgxNDEyLzM0MjQ2MzMucG5n/original/cPCoTF.png)
+
+As you travel throughout the world, you have the option to pick up new cards with new symbols from different places you have visited and returned to. This inherently/mechanically expands your ability to connect with more people. The catch, however, is your deck only has a limited size of around 10 cards, and there are are A LOT of different symbols. The deck and hand size limits make it basically impossible to be capable of communicating with every part of the map, because you need certain number of matching symbols in your base deck to complete the 5-card conversations successfully. So, as I discovered when I returned home - it can also inhibit your ability to speak to people you once could communicate with so easily, which was devastating (on a mechanical as well as story level) to not be able to complete a conversation with  my sibling! And also absolutly reflected my real-world experiences leaving home and traveling a lot (I lived out of a truck for like 5 years, it was a good time). 
+
+The inerently limiting/punishing nature of this mechanic I found so incredibly effective at conveying what it is like to travel, to adopt new cultural affects or modes of being, and feeling how incompatible those modes of being are with other places or where one is from. The game is pretty short, maybe a few hours long at most, so it is replayable for different endings depending on which card symbols the player focuses on. I found it pretty difficult to get a good ending, and it does seem required to return home regularly to rest (another mechanic is that as you get more tired, your hand size also decreases, which obviously also makes it harder to speak to others) meaning that it is sort of default assumed that you will keep the circles and squares of your homeland, which feels a bit limiting in a less-interesting way - I can't freely integrate with other parts of the map no matter what. 
+
+I'd love to take on and use this idea of change, but not free/unlimited change in future projects. I like the idea of having a mechanic that doesn't reward typical gamer min/maxing, but subverts the ability of continuing to get stronger without any barriers. Mechanics that make the player feel weaker but not by confusing or obfuscating are so powerful and interesting! 
+
+
+
+
 
 
 
