@@ -75,6 +75,25 @@ The inerently limiting/punishing nature of this mechanic I found so incredibly e
 I'd love to take on and use this idea of change, but not free/unlimited change in future projects. I like the idea of having a mechanic that doesn't reward typical gamer min/maxing, but subverts the ability of continuing to get stronger without any barriers. Mechanics that make the player feel weaker but not by confusing or obfuscating are so powerful and interesting! 
 
 
+## Iterative Prototype 2 (and 1, kinda)
+
+Schemeing ideation around making a game for the Playdate. Thinking: a game where you are a passenger on a road trip. Thinking about exploring ideas of reproductive labor, the easy soft skills of getting around. It's not all torque and gears and engines and going fast! It's navigating and finding gas stations and places to sleep and adjusting the thermostat and making a playlist.
+
+Since it's on the playdate with a crank... Want to have the setting be a 90s Toyota, with the door with the manual crank. Maybe will use the crank for some knobs too.
+
+Things for player to do:
+Roll Down Window To Get a Fly Out Of the Car
+Adjust the vents and temperature
+Find a radio station and adjust volume
+(Lmao this might already be too much for lil ole me)
+
+Lua seems difficult but doable? Maybe? This might end up being made in Unity. 
+
+Visuals: was messing around with pixel art programs, making all my own art seems WAY too difficult. What about converting images to 1bit black and white images? Played around with some automatic programs, didn't love the results, difficult to actually get things into 1bit dither... But found a comment on a forum (of course) about how to do something in photosthop and I like what I'm working with now. Art prototype! It's kinda shitty in a grunge way which is, frankly, what I'm capable of. The playdate has a screen that's 400 x 240 px with 173 DPI, so it can be very detailed for its size. 
+
+![](https://github.com/beaflowers/CART-315/blob/main/Gifs/car-door_dither.png)
+![](https://github.com/beaflowers/CART-315/blob/main/Gifs/side-view-dash_dither.png)
+![](https://github.com/beaflowers/CART-315/blob/main/Gifs/stereo-and-thermo_dither.png)
 
 
 
