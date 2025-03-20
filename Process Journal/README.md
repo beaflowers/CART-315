@@ -99,7 +99,7 @@ Visuals: was messing around with pixel art programs, making all my own art seems
 I had a whole thing written and then I forgot to save. So that's nice.
 
 Wrote some text, figured out how to draw a box the size of the text, and iterate through different texts to give car quests. Here it is just cycling through:
-![](https://github.com/beaflowers/CART-315/blob/main/Gifs/text%20gif.gif)
+![](https://github.com/beaflowers/CART-315/blob/main/Gifs/text.gif)
 
 Figuring out how to wrap text so it didn't run off screen was fun.
 Possible future things: [how to change text/font size](https://devforum.play.date/t/how-to-change-text-size-bigger/13720), [animated text over a sprite box](https://devforum.play.date/t/text-dialog-boxes-animated-text/4009)
