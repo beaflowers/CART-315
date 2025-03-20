@@ -95,6 +95,22 @@ Visuals: was messing around with pixel art programs, making all my own art seems
 ![](https://github.com/beaflowers/CART-315/blob/main/Gifs/side-view-dash_dither.png)
 ![](https://github.com/beaflowers/CART-315/blob/main/Gifs/stereo-and-thermo_dither.png)
 
+## Iteration Prototype 3
+I had a whole thing written and then I forgot to save. So that's nice.
+
+Wrote some text, figured out how to draw a box the size of the text, and iterate through different texts to give car quests. Here it is just cycling through:
+![]https://github.com/beaflowers/CART-315/blob/main/Gifs/text%20gif.gif
+
+Figuring out how to wrap text so it didn't run off screen was fun.
+Possible future things: [how to change text/font size](https://devforum.play.date/t/how-to-change-text-size-bigger/13720), [animated text over a sprite box](https://devforum.play.date/t/text-dialog-boxes-animated-text/4009)
+
+Been trying to figure out how to get some quest functionality/interactivity going. My code looks ok to me but it's still not working (just trying to test out turning, and pressing "A" to solve a quest). Have a boolean quest value to determine whether new text should cycle through more options or not. Will need to sort text into car location, and activate quests based on that... Each quest will be its own function probably?
+
+Things to Do:
+Make backseat graphic
+Add sound effects
+Figure out crank! and other quest mechanics
+Animation?
 
 
 
