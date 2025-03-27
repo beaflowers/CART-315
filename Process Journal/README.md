@@ -113,7 +113,7 @@ Add sound effects
 Figure out crank! and other quest mechanics
 Animation?
 
-##Iteration Prototype 4
+## Iteration Prototype 4
 Slowly making progress to get all the visual elements working: today, we added a cursor for selecting what part of the car the driver is giving us a quest for. And a backseat and a cute dog exist now. 
 
 This was actually such a pain and involved some re-tweaking of existing elememts. I wanted to make the cursor a sprite so it's easy to move around and reposition, but that interfered with EVERY background image I had already had - so I had to convert those to sprites as well to be able to set Z score, and then fix all the logic for changing between scenes to fit for sprites. It's actually hopefully much cleaner now. Cursor doesn't appear on main driver screen, but does appear on all others, and only moves on the knobs screne for now.
