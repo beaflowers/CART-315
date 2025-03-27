@@ -113,7 +113,22 @@ Add sound effects
 Figure out crank! and other quest mechanics
 Animation?
 
+##Iteration Prototype 4
+Slowly making progress to get all the visual elements working: today, we added a cursor for selecting what part of the car the driver is giving us a quest for. And a backseat and a cute dog exist now. 
 
+This was actually such a pain and involved some re-tweaking of existing elememts. I wanted to make the cursor a sprite so it's easy to move around and reposition, but that interfered with EVERY background image I had already had - so I had to convert those to sprites as well to be able to set Z score, and then fix all the logic for changing between scenes to fit for sprites. It's actually hopefully much cleaner now. Cursor doesn't appear on main driver screen, but does appear on all others, and only moves on the knobs screne for now.
+
+I only had time to pinpoit the exact cursor positions for the knobs screen, but that's the one with the most positions (I think backseat and cardoor will only have two). I don't know why the cursor image isn't transparent, that's annoying, will have to fix. (Maybe make it better, too?) 
+
+![](https://github.com/beaflowers/CART-315/blob/main/Gifs/switch%20gif.gif)
+
+I like the idea of having to put in "effort" to look at other screens, but this feels limiting for other activity in the car - we can cycle through with A, and then B to select... but that doesn't feel particularly intuitive, though it's not so bad on the playdate. If we cycled through with the arrow keys it might make more sense. But in practice I dont think it feels too bad.
+
+Maybe B will just offer a boolean toggle on each knob - like vent pointed down or up, hot or cold, radio... on or off. Not ideal but maybe the best solution for now? 
+
+I'm worried about getting the quests all working correctly because learning Lua is.... slow. And that logic might be tricky. 
+
+Still no crank or audio. But soon I swear.
 
 
 
