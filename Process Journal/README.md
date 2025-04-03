@@ -130,6 +130,41 @@ I'm worried about getting the quests all working correctly because learning Lua 
 
 Still no crank or audio. But soon I swear.
 
+## Iteration Prototype 5
+Okay nothing new visually or frankly even noticably different in gif form. But I got a whole quest logic system functioning that ties specific driver asks to specific things the passenger has to do, which took a bit of mucking around, and, as per usual, a whole re-write of some existing thing I already had. I'm really learning here why code ends up so spaghetti sometimes - like.. it just really does get really big and really confusing and held together by hopes and dreams and the bare minimum of human/computer logic. This is still small enough that I can re-write and adjust things, but oh my god! I can so easily see it getting too big to do that! 
+
+I ALSO fixed A BUG I discovered during PLAYTESTING(!!!)(huge, exciting). Basically if a player switched from one screen to another it would sometimes throw an error and it would crash the game - this is because some of the arrays for the selection mechanic only have 2 possible outcomes, while 1 screen has 3. So if the selector was last on "3", when it went to a screen that only has two selection options, it would crash. But now included in the scene selection logic is a means to make sure the initial selector is always set back to 1. So that is cool!!! 
+
+I've minimized the number of quests to just 6 and... will try and come up with some little gimmick for each of them. I'm not really sure how to convey to the player if what they're doing or not is correct without animation - like if the window isn't rolling down that's obviously incorrect... How do I indicate they should use the crank? I'm guessing I'll need to "zoom" in on the screens and have a closeup view and maybe some sound effects in a text box...? I wonder if there's like a default crank animation and a way to indicate goals there. 
+
+Snack quest - uhhh idk that one might just be the select a bag. 
+Dog - pet the dog with the crank, like wiggle it back and forth a coule times
+fly - roll down window
+fart - roll down window
+ac - adjust crank to be in a specific range
+radio - ???? ideally a way to scroll through a dial... maybe crank through and play *static* then *sound*
+
+notes to keep track of things when solving quest logics and make sure I get everything:
+QUESTS.SNACK,
+QUESTS.DOG,
+QUESTS.FLY, 
+QUESTS.FART, 
+QUESTS.AC, 
+QUESTS.RADIO 
+
+knobs 
+index 1 = vents
+index 2 = temperature
+index 3 = radio
+
+door 
+index 1 = window handle
+index 2 = door slot
+
+backseat 
+index 1 = dog
+index 2 = snacks
+
 
 
 
