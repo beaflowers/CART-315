@@ -184,3 +184,5 @@ For example:
 I tried to draw an arc indicating where the crank should be for the dog but it's basically invisible. Would be nice to have a big polygon or something representing the top of a circle, or a tracker pointing to where the crank is located. Just tying that made me tired right now. 
 
 Would have been fun to work on this with other people, who wanted to do sprites/animations or sound. Oh wellllll that's what I get for doing some wingnut ass project I guess!!!
+
+For you to play: You should be able to sideload the [zipped game folder](https://github.com/beaflowers/CART-315/blob/main/Driving%20Game/playdate-template-main/builds/As%20Long%20As%20We're%20Going%20Somewhere%20Together.pdx.zip) via the [web portal](https://play.date/account/sideload/) which is like crazy easy.  
