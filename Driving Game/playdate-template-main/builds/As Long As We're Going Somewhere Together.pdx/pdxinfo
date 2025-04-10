@@ -1,0 +1,9 @@
+name=As Long As We're Going Somewhere Together
+author=Bea Flowers
+description=A sitting simulator about being a passenger on a road trip.
+bundleID=com.flowers.together
+version=1.0.0
+buildNumber=1
+imagePath=card.png
+pdxversion=20601
+buildtime=797633861
