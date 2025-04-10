@@ -164,3 +164,23 @@ index 2 = door slot
 backseat \
 index 1 = dog\
 index 2 = snacks
+
+## Final Iteration Prototype
+Why is my code all in one file??? How is this so poorly organized??? What have I done??? This keeps getting bigger???!!! Oh my god!!!! 
+
+CRANK QUEST #1 DOOR HANDLE SUCCESS!!!! 
+
+My best friend conveniently bought a truck with a window crank handle in it this past week. This unfortunately means they are leaving for several months but it did mean I got to take some more specific pictures of a car interior, with a driver, actually from the passenger seat perspective. Funnily enough, the pictures I got of the door and handle were the worst and didn't work at all so I'm sticking with the original door, but I updated everything else. There's really no good pictures of cars from the passenger seat view, because that's not who cares are being sold to. Funny. DID I NEED TO BE SPENDING SO MUCH TIME RE-DOING THE AESTHETICS??? One could argue "no" but I don't care. (Soooo many people commented on it being a "horror game" I think because it's in black and white, but also because the driver was a ghost.)
+
+And finally, FINALLY??? Got all the mini-quest mechanics working. I feel like it feels good and makes sense narratively, but there's little indicating what to do to the player - I threw in the basic UI "use the crank" animation that comes in a library(!) but each element does use the crank differently and I don't indicate that much, and feel like I'd need different sprite animations to do so. 
+
+For example:
+- dog quest is "rub" back and forth with the crank at the top of its range
+- window quest is go in circles with the crank several times (the sprite is animated to rotate, and it looks so stupid and funny)
+- radio is find a specific angle of the crank (somewhat randomized!) (This one works the best, I think, since I give static sounds as feedback for an incorrect location)
+- AC is turn the knob slightly in a clockwise direction using the crank (only 120 degrees)
+- Snack quest is just pressing A but it's got some random text responses so it doesn't feel too dead. 
+
+I tried to draw an arc indicating where the crank should be for the dog but it's basically invisible. Would be nice to have a big polygon or something representing the top of a circle, or a tracker pointing to where the crank is located. Just tying that made me tired right now. 
+
+Would have been fun to work on this with other people, who wanted to do sprites/animations or sound. Oh wellllll that's what I get for doing some wingnut ass project I guess!!!
