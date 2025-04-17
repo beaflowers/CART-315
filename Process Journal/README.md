@@ -186,3 +186,12 @@ I tried to draw an arc indicating where the crank should be for the dog but it's
 Would have been fun to work on this with other people, who wanted to do sprites/animations or sound. Oh wellllll that's what I get for doing some wingnut ass project I guess!!!
 
 For you to play: You should be able to sideload the [zipped game folder](https://github.com/beaflowers/CART-315/blob/main/Driving%20Game/playdate-template-main/builds/As%20Long%20As%20We're%20Going%20Somewhere%20Together.pdx.zip) via the [web portal](https://play.date/account/sideload/) which is like crazy easy.  
+
+## Post Journal Playtest Reportback
+Wow people sure do love to crank!!! There are definitley issues with my mechanics right now - the window one is basically the only one that works right at the moment.
+
+The dog one - works if you just spin it around many times, because of the true/false entry/exit area I have for the "petting" motion. People just blow through the radio one too, because it will inevitably hit the target if you spin around - suggestion to make you have to "linger" in an area for a while, or the driver gives negative feedback? Would also be clearer with radio dial animation. Same with the AC knob - can just blow through it, but negative feedback could work here as well... 
+
+People also struggled figuring out what was what on the dashboard - but that kinda feels legit tbh because it IS like that when you're looking at a new car interface. AC is typically conveyed in color which I can't do, but maybe there's a way to make it a little more indiciative... Also I left in a vent option that never got used so that makes things confusing too. 
+
+Would love to find an animator, tweak these mechanics, and add some kind of narrative... and put it in the catalog!! :)
