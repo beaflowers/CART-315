@@ -1099,7 +1099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93511a34e850c4bc4a8e375603303f29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paddleSpeed: 0.05
+  paddleSpeed: 0.5
   leftWall: -7.75
   rightWall: 7.75
   leftKey: 97
