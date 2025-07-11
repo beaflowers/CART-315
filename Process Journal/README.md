@@ -113,10 +113,85 @@ Add sound effects
 Figure out crank! and other quest mechanics
 Animation?
 
+## Iteration Prototype 4
+Slowly making progress to get all the visual elements working: today, we added a cursor for selecting what part of the car the driver is giving us a quest for. And a backseat and a cute dog exist now. 
 
+This was actually such a pain and involved some re-tweaking of existing elememts. I wanted to make the cursor a sprite so it's easy to move around and reposition, but that interfered with EVERY background image I had already had - so I had to convert those to sprites as well to be able to set Z score, and then fix all the logic for changing between scenes to fit for sprites. It's actually hopefully much cleaner now. Cursor doesn't appear on main driver screen, but does appear on all others, and only moves on the knobs screne for now.
 
+I only had time to pinpoit the exact cursor positions for the knobs screen, but that's the one with the most positions (I think backseat and cardoor will only have two). I don't know why the cursor image isn't transparent, that's annoying, will have to fix. (Maybe make it better, too?) 
 
+![](https://github.com/beaflowers/CART-315/blob/main/Gifs/switch%20gif.gif)
 
+I like the idea of having to put in "effort" to look at other screens, but this feels limiting for other activity in the car - we can cycle through with A, and then B to select... but that doesn't feel particularly intuitive, though it's not so bad on the playdate. If we cycled through with the arrow keys it might make more sense. But in practice I dont think it feels too bad.
 
+Maybe B will just offer a boolean toggle on each knob - like vent pointed down or up, hot or cold, radio... on or off. Not ideal but maybe the best solution for now? 
 
+I'm worried about getting the quests all working correctly because learning Lua is.... slow. And that logic might be tricky. 
 
+Still no crank or audio. But soon I swear.
+
+## Iteration Prototype 5
+Okay nothing new visually or frankly even noticably different in gif form. But I got a whole quest logic system functioning that ties specific driver asks to specific things the passenger has to do, which took a bit of mucking around, and, as per usual, a whole re-write of some existing thing I already had. I'm really learning here why code ends up so spaghetti sometimes - like.. it just really does get really big and really confusing and held together by hopes and dreams and the bare minimum of human/computer logic. This is still small enough that I can re-write and adjust things, but oh my god! I can so easily see it getting too big to do that! 
+
+I ALSO fixed A BUG I discovered during PLAYTESTING(!!!)(huge, exciting). Basically if a player switched from one screen to another it would sometimes throw an error and it would crash the game - this is because some of the arrays for the selection mechanic only have 2 possible outcomes, while 1 screen has 3. So if the selector was last on "3", when it went to a screen that only has two selection options, it would crash. But now included in the scene selection logic is a means to make sure the initial selector is always set back to 1. So that is cool!!! 
+
+I've minimized the number of quests to just 6 and... will try and come up with some little gimmick for each of them. I'm not really sure how to convey to the player if what they're doing or not is correct without animation - like if the window isn't rolling down that's obviously incorrect... How do I indicate they should use the crank? I'm guessing I'll need to "zoom" in on the screens and have a closeup view and maybe some sound effects in a text box...? I wonder if there's like a default crank animation and a way to indicate goals there. 
+
+Snack quest - uhhh idk that one might just be the select a bag. \
+Dog - pet the dog with the crank, like wiggle it back and forth a coule times\
+fly - roll down window\
+fart - roll down window\
+ac - adjust crank to be in a specific range\
+radio - ???? ideally a way to scroll through a dial... maybe crank through and play *static* then *sound*\
+
+notes to keep track of things when solving quest logics and make sure I get everything:\
+QUESTS.SNACK,\
+QUESTS.DOG,\
+QUESTS.FLY, \
+QUESTS.FART, \
+QUESTS.AC, \
+QUESTS.RADIO
+
+knobs \
+index 1 = vents\
+index 2 = temperature\
+index 3 = radio
+
+door \
+index 1 = window handle\
+index 2 = door slot
+
+backseat \
+index 1 = dog\
+index 2 = snacks
+
+## Final Iteration Prototype
+Why is my code all in one file??? How is this so poorly organized??? What have I done??? This keeps getting bigger???!!! Oh my god!!!! 
+
+CRANK QUEST #1 DOOR HANDLE SUCCESS!!!! 
+
+My best friend conveniently bought a truck with a window crank handle in it this past week. This unfortunately means they are leaving for several months but it did mean I got to take some more specific pictures of a car interior, with a driver, actually from the passenger seat perspective. Funnily enough, the pictures I got of the door and handle were the worst and didn't work at all so I'm sticking with the original door, but I updated everything else. There's really no good pictures of cars from the passenger seat view, because that's not who cares are being sold to. Funny. DID I NEED TO BE SPENDING SO MUCH TIME RE-DOING THE AESTHETICS??? One could argue "no" but I don't care. (Soooo many people commented on it being a "horror game" I think because it's in black and white, but also because the driver was a ghost.)
+
+And finally, FINALLY??? Got all the mini-quest mechanics working. I feel like it feels good and makes sense narratively, but there's little indicating what to do to the player - I threw in the basic UI "use the crank" animation that comes in a library(!) but each element does use the crank differently and I don't indicate that much, and feel like I'd need different sprite animations to do so. 
+
+For example:
+- dog quest is "rub" back and forth with the crank at the top of its range
+- window quest is go in circles with the crank several times (the sprite is animated to rotate, and it looks so stupid and funny)
+- radio is find a specific angle of the crank (somewhat randomized!) (This one works the best, I think, since I give static sounds as feedback for an incorrect location)
+- AC is turn the knob slightly in a clockwise direction using the crank (only 120 degrees)
+- Snack quest is just pressing A but it's got some random text responses so it doesn't feel too dead. 
+
+I tried to draw an arc indicating where the crank should be for the dog but it's basically invisible. Would be nice to have a big polygon or something representing the top of a circle, or a tracker pointing to where the crank is located. Just tying that made me tired right now. 
+
+Would have been fun to work on this with other people, who wanted to do sprites/animations or sound. Oh wellllll that's what I get for doing some wingnut ass project I guess!!!
+
+For you to play: You should be able to sideload the [zipped game folder](https://github.com/beaflowers/CART-315/blob/main/Driving%20Game/playdate-template-main/builds/As%20Long%20As%20We're%20Going%20Somewhere%20Together.pdx.zip) via the [web portal](https://play.date/account/sideload/) which is like crazy easy.  
+
+## Post Journal Playtest Reportback
+Wow people sure do love to crank!!! There are definitley issues with my mechanics right now - the window one is basically the only one that works right at the moment.
+
+The dog one - works if you just spin it around many times, because of the true/false entry/exit area I have for the "petting" motion. People just blow through the radio one too, because it will inevitably hit the target if you spin around - suggestion to make you have to "linger" in an area for a while, or the driver gives negative feedback? Would also be clearer with radio dial animation. Same with the AC knob - can just blow through it, but negative feedback could work here as well... 
+
+People also struggled figuring out what was what on the dashboard - but that kinda feels legit tbh because it IS like that when you're looking at a new car interface. AC is typically conveyed in color which I can't do, but maybe there's a way to make it a little more indiciative... Also I left in a vent option that never got used so that makes things confusing too. 
+
+Would love to find an animator, tweak these mechanics, and add some kind of narrative... and put it in the catalog!! :)
